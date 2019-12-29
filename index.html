@@ -142,12 +142,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">6</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">9</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -202,6 +202,204 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://cyf2020.github.io/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/pic.JPG">
+      <meta itemprop="name" content="Cyf">
+      <meta itemprop="description" content="日常记录技术学习的难点重点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cyf的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">JavaSE学习笔记</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-30 00:36:29" itemprop="dateCreated datePublished" datetime="2019-12-30T00:36:29Z">2019-12-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-29 21:04:24" itemprop="dateModified" datetime="2019-12-29T21:04:24Z">2019-12-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span id="/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="JavaSE学习笔记" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>463</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习JavaSE过程中的笔记，以及一些常见问题的回答</p>
+<h1 id="Java语言准备工作"><a href="#Java语言准备工作" class="headerlink" title="Java语言准备工作"></a>Java语言准备工作</h1><h2 id="JDK-JRE-JVM三者关系"><a href="#JDK-JRE-JVM三者关系" class="headerlink" title="JDK,JRE,JVM三者关系"></a>JDK,JRE,JVM三者关系</h2><ol>
+<li>JDK包含JRE，JRE又包含JVM</li>
+<li>JDK=JRE+Java开发工具（javac.exe,java.exe,javadoc.exe）</li>
+<li>JRE=JVM+Java核心类库<h2 id="Java系统环境变量的配置"><a href="#Java系统环境变量的配置" class="headerlink" title="Java系统环境变量的配置"></a>Java系统环境变量的配置</h2></li>
+<li>配置JAVA_HOME为bin的上一层目录</li>
+<li>path=%JAVA_HOME%\bin<h2 id="常用的cmd命令行操作"><a href="#常用的cmd命令行操作" class="headerlink" title="常用的cmd命令行操作"></a>常用的cmd命令行操作</h2></li>
+</ol>
+<ul>
+<li>cd 进入路径 md 创建目录 rd 删除目录 del 删除文件<h1 id="Java基础语法"><a href="#Java基础语法" class="headerlink" title="Java基础语法"></a>Java基础语法</h1><h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2></li>
+<li>包名 所有字母小写 com.package</li>
+<li>类名、接口名 所有单词首字母大写</li>
+<li>变量名、方法名 第一个单词小写，其余单词首字母大写</li>
+<li>常量名 大写下划线连接 <code>final int CONST</code><h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="center">储存空间</th>
+<th align="center">范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">byte</td>
+<td align="center">1字节(8bit)</td>
+<td align="center">-128~127</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">2字节</td>
+<td align="center">-2^15~2^15-1</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">4字节</td>
+<td align="center">-2^31~2^31-1(约21亿)</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">8字节</td>
+<td align="center">-2^63~2^63-1</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">4字节</td>
+<td align="center">\</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">8字节</td>
+<td align="center">\</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center">2字节</td>
+<td align="center">\</td>
+</tr>
+<tr>
+<td align="center"><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> a = <span class="number">12f</span>; <span class="comment">//浮点型默认double型,后加f转换</span></span><br><span class="line"><span class="keyword">int</span> b = <span class="number">0xf</span>; <span class="comment">//16进制声明</span></span><br><span class="line"><span class="keyword">int</span> c = <span class="number">012</span>; <span class="comment">//八进制声明</span></span><br><span class="line"><span class="keyword">double</span> d =<span class="number">5.12e-2</span>;<span class="comment">//科学计数法声明</span></span><br><span class="line"><span class="keyword">char</span> e = <span class="string">'\u000a'</span>; <span class="comment">//unicode值表示字符常量</span></span><br><span class="line"><span class="keyword">long</span> f = <span class="number">12323L</span>;</span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">## 强制类型转换</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//截断</span></span><br><span class="line"><span class="keyword">double</span> a=<span class="number">1.2</span>;</span><br><span class="line"><span class="keyword">int</span> b=(<span class="keyword">int</span>)a;</span><br><span class="line"><span class="comment">//精度损失</span></span><br><span class="line"><span class="keyword">int</span> c=<span class="number">128</span>;</span><br><span class="line"><span class="keyword">byte</span> d=(<span class="keyword">byte</span>)c;<span class="comment">//d=-128</span></span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">## String类型</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String numberStr=<span class="string">"001"</span>;</span><br><span class="line">String name=<span class="string">"Cyf"</span>;</span><br><span class="line">System.out.println(numberStr+name);<span class="comment">//连接操作</span></span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>  
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -360,7 +558,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-29 15:20:58" itemprop="dateModified" datetime="2019-12-29T15:20:58Z">2019-12-29</time>
+                <time title="修改时间：2019-12-29 20:20:59" itemprop="dateModified" datetime="2019-12-29T20:20:59Z">2019-12-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -523,20 +721,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
