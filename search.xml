@@ -3,15 +3,55 @@
   <entry>
     <title>相册</title>
     <url>/2019/12/29/Photos/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
   </entry>
   <entry>
-    <title>Hello World! My first tempt to write my own blog!</title>
+    <title>HEXO中的footnotes插件</title>
     <url>/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+        <div id="aplayer-ExhUsVUT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-ExhUsVUT"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "城南花已开",
+              author: "三亩地",
+              url: "http://music.163.com/#/song id=468176711;",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<h1 id="一、插件概述"><a href="#一、插件概述" class="headerlink" title="一、插件概述"></a>一、插件概述</h1><hr>
+<ul>
+<li>在HEXO建立的个人博客编写markdown文档时迅速编写脚注</li>
+<li>效果如下</li>
+<li><div align=center> <img src="../images/1-1.bmp" width="200" height="100"/><div>
+<div align=center> <img src="../images/1-2.bmp" width="200" height="100"/><div>
+# 二、安装方法</li>
+</ul>
+<ol>
+<li><p>以及安装HEXO，并建立博客文件夹根目录 </p>
+</li>
+<li><p>使用cnpm进行安装，搜索引擎搜索如何安装cnpm，会有许多教程，不再赘述</p>
+</li>
+<li><p>在git bash中进入博客文件夹根目录</p>
+</li>
+<li><p>输入命令 <code>$ cnpm install hexo-footnotes --save</code></p>
+</li>
+</ol>
+<p><a href="https://github.com/LouisBarranqueiro/hexo-footnotes" target="_blank" rel="noopener">官方文档</a><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">官方文档</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div></p>
+]]></content>
       <tags>
-        <tag>日常</tag>
+        <tag>HEXO 插件</tag>
       </tags>
   </entry>
 </search>

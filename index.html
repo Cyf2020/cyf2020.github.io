@@ -102,6 +102,8 @@
   </style>
 </noscript>
 
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -313,7 +315,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/" class="post-title-link" itemprop="url">Hello World! My first tempt to write my own blog!</a>
+            <a href="/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/" class="post-title-link" itemprop="url">HEXO中的footnotes插件</a>
         </h1>
 
         <div class="post-meta">
@@ -330,11 +332,11 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-29 09:46:25" itemprop="dateModified" datetime="2019-12-29T09:46:25Z">2019-12-29</time>
+                <time title="修改时间：2019-12-29 11:31:21" itemprop="dateModified" datetime="2019-12-29T11:31:21Z">2019-12-29</time>
               </span>
 
           
-            <span id="/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World! My first tempt to write my own blog!" title="阅读次数">
+            <span id="/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/" class="post-meta-item leancloud_visitors" data-flag-title="HEXO中的footnotes插件" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -360,7 +362,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>12</span>
+              <span>444</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -379,8 +381,48 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>
+          
+        <div id="aplayer-ExhUsVUT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-ExhUsVUT"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "城南花已开",
+              author: "三亩地",
+              url: "http://music.163.com/#/song id=468176711;",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<h1 id="一、插件概述"><a href="#一、插件概述" class="headerlink" title="一、插件概述"></a>一、插件概述</h1><hr>
+<ul>
+<li>在HEXO建立的个人博客编写markdown文档时迅速编写脚注</li>
+<li>效果如下</li>
+<li><div align=center> <img src="../images/1-1.bmp" width="200" height="100"/><div>
+<div align=center> <img src="../images/1-2.bmp" width="200" height="100"/><div>
+# 二、安装方法</li>
+</ul>
+<ol>
+<li><p>以及安装HEXO，并建立博客文件夹根目录 </p>
+</li>
+<li><p>使用cnpm进行安装，搜索引擎搜索如何安装cnpm，会有许多教程，不再赘述</p>
+</li>
+<li><p>在git bash中进入博客文件夹根目录</p>
+</li>
+<li><p>输入命令 <code>$ cnpm install hexo-footnotes --save</code></p>
+</li>
+</ol>
+<p><a href="https://github.com/LouisBarranqueiro/hexo-footnotes" target="_blank" rel="noopener">官方文档</a><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">官方文档</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div></p>
+
       
     </div>
 
@@ -499,6 +541,7 @@
 
       </div>
     </main>
+    <link rel="stylesheet" href="/dist/APlayer.min.css">
 
     <footer class="footer">
       <div class="footer-inner">
