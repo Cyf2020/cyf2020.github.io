@@ -14,6 +14,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-corner-indicator.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
@@ -30,7 +31,7 @@
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
+    fancybox: true,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -146,7 +147,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -206,7 +207,7 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
       </div>
 
       
@@ -239,35 +240,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2019-12-28T10:36:29Z"
+              datetime="2019-12-28T18:36:29Z"
               content="2019-12-28">
           12-28
         </time>
       </div>
 
       <h2 class="post-title">
-          <a class="post-title-link" href="/2019/12/28/Hello-World-My-first-tempt-to-write-my-own-blog/" itemprop="url">
+          <a class="post-title-link" href="/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/" itemprop="url">
             <span itemprop="name">Hello World! My first tempt to write my own blog!</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-12-28T10:28:34Z"
-              content="2019-12-28">
-          12-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/12/28/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
           </a>
       </h2>
 
@@ -348,9 +329,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -382,7 +367,10 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        
+        <script
+  async
+  src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+></script>
 
 <div class="copyright">
   
@@ -406,7 +394,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
-      <span class="site-uv" title="总访客量">
+      <span class="site-uv" title="我的第 undefined 位朋友,">
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
@@ -415,7 +403,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
-      <span class="site-pv" title="总访问量">
+      <span class="site-pv" title="历经 undefined 次回眸才与你相遇">
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
@@ -436,6 +424,8 @@
   
   <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -506,7 +496,8 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 </html>
  
 <script async src="//code.tidio.co/2ayvsl9qlmke4gelnl62vrfa7gqiyedp.js"></script>
+
