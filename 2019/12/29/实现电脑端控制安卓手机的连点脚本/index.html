@@ -49,24 +49,23 @@
   };
 </script>
 
-  <meta name="description" content="前言 今天介绍一款hexo里的插件，能够自动在生成的网页最底部添加脚注的解释信息，安装与使用方法如下">
+  <meta name="description" content="前言  前段时间，朋友有抢淘宝直播红包的需求，具体抢红包的细节是，连续点按手机界面上出现的按钮。于是我萌生了使用python脚本控制安卓手机，连续点击屏幕的想法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HEXO中的footnotes插件（快速给Markdown文档添加脚注）">
-<meta property="og:url" content="http://cyf2020.github.io/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/index.html">
+<meta property="og:title" content="python三行代码实现电脑端控制安卓手机的连点脚本">
+<meta property="og:url" content="http://cyf2020.github.io/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/index.html">
 <meta property="og:site_name" content="Cyf的个人博客">
-<meta property="og:description" content="前言 今天介绍一款hexo里的插件，能够自动在生成的网页最底部添加脚注的解释信息，安装与使用方法如下">
+<meta property="og:description" content="前言  前段时间，朋友有抢淘宝直播红包的需求，具体抢红包的细节是，连续点按手机界面上出现的按钮。于是我萌生了使用python脚本控制安卓手机，连续点击屏幕的想法">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://cyf2020.github.io/images/1-1.bmp">
-<meta property="og:image" content="http://cyf2020.github.io/images/1-2.bmp">
 <meta property="article:published_time" content="2019-12-28T18:36:29.000Z">
-<meta property="article:modified_time" content="2019-12-29T15:21:29.047Z">
+<meta property="article:modified_time" content="2019-12-29T15:20:58.926Z">
 <meta property="article:author" content="Cyf">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="footnotes">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="android">
+<meta property="article:tag" content="adb">
+<meta property="article:tag" content="脚本">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://cyf2020.github.io/images/1-1.bmp">
 
-<link rel="canonical" href="http://cyf2020.github.io/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/">
+<link rel="canonical" href="http://cyf2020.github.io/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/">
 
 
 <script id="page-configurations">
@@ -78,7 +77,7 @@
   };
 </script>
 
-  <title>HEXO中的footnotes插件（快速给Markdown文档添加脚注） | Cyf的个人博客</title>
+  <title>python三行代码实现电脑端控制安卓手机的连点脚本 | Cyf的个人博客</title>
   
 
 
@@ -109,6 +108,8 @@
   </style>
 </noscript>
 
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -213,7 +214,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://cyf2020.github.io/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="http://cyf2020.github.io/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/pic.JPG">
@@ -226,7 +227,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          HEXO中的footnotes插件（快速给Markdown文档添加脚注）
+          python三行代码实现电脑端控制安卓手机的连点脚本
         </h1>
 
         <div class="post-meta">
@@ -243,7 +244,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-29 15:21:29" itemprop="dateModified" datetime="2019-12-29T15:21:29Z">2019-12-29</time>
+                <time title="修改时间：2019-12-29 15:20:58" itemprop="dateModified" datetime="2019-12-29T15:20:58Z">2019-12-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -251,14 +252,20 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AFHEXO/" itemprop="url" rel="index">
-                    <span itemprop="name">前端HEXO</span>
+                  <a href="/categories/python%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index">
+                    <span itemprop="name">python语言</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python%E8%AF%AD%E8%A8%80/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/" itemprop="url" rel="index">
+                    <span itemprop="name">安卓开发</span>
                   </a>
                 </span>
             </span>
 
           
-            <span id="/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/" class="post-meta-item leancloud_visitors" data-flag-title="HEXO中的footnotes插件（快速给Markdown文档添加脚注）" title="阅读次数">
+            <span id="/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/" class="post-meta-item leancloud_visitors" data-flag-title="python三行代码实现电脑端控制安卓手机的连点脚本" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -273,8 +280,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/" itemprop="commentCount"></span>
+    <a title="valine" href="/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -284,7 +291,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>361</span>
+              <span>807</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -304,43 +311,54 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
-<p>今天介绍一款hexo里的插件，能够自动在生成的网页最底部添加脚注的解释信息，安装与使用方法如下</p>
-<a id="more"></a>
-<h1 id="插件概述"><a href="#插件概述" class="headerlink" title="插件概述"></a>插件概述</h1><hr>
 <ul>
-<li><p>在HEXO建立的个人博客编写markdown文档时迅速编写脚注</p>
-</li>
-<li><p>效果如下</p>
-</li>
-<li><div align=center> <img src="/images/1-1.bmp"/><div>
-<div align=center> <img src="/images/1-2.bmp" /><div>
-
-</li>
+<li>前段时间，朋友有抢淘宝直播红包的需求，具体抢红包的细节是，连续点按手机界面上出现的按钮。于是我萌生了使用python脚本控制安卓手机，连续点击屏幕的想法<a id="more"></a>
+<h1 id="电脑软件准备"><a href="#电脑软件准备" class="headerlink" title="电脑软件准备"></a>电脑软件准备</h1></li>
 </ul>
-<h1 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h1><hr>
+<hr>
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">Anaconda包管理器</a>,点击进入下载页面（最底部为最新版本）,按需求下载32位或64位</li>
+<li><a href="https://pan.baidu.com/s/1C_20EIVrFVRLSbKIppPNvQ" target="_blank" rel="noopener">adb安卓调试桥</a>,百度网盘链接,点击下载</li>
+<li>vscode(非必须)</li>
+<li>以上软件均需添加到系统环境变量中，这一步请自行百度搜索配置</li>
+<li>在cmd窗口输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb -version</span><br><span class="line">python3 -v</span><br></pre></td></tr></table></figure>
+即可确认环境是否准备完善</li>
+</ul>
+<h1 id="手机准备"><a href="#手机准备" class="headerlink" title="手机准备"></a>手机准备</h1><hr>
 <ol>
-<li><p>以及安装HEXO，并建立博客文件夹根目录 </p>
+<li>打开开发者模式，具体手机型号均有不同，例如OPPO手机流程如下<ul>
+<li>设置-&gt;关于手机-&gt;连续点按版本号5次</li>
+</ul>
 </li>
-<li><p>使用cnpm进行安装，搜索引擎搜索如何安装cnpm，会有许多教程，不再赘述</p>
-</li>
-<li><p>在git bash中进入博客文件夹根目录</p>
-</li>
-<li><p>输入命令 <code>$ cnpm install hexo-footnotes --save</code></p>
-</li>
+<li>打开开发者模式的情况下，打开usb调试开关</li>
+<li>连接手机   </li>
 </ol>
-<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><hr>
-<ol>
-<li>“需要脚注的内容”+[ ^脚注编号] </li>
-<li>就会显示为 “内容”<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></li>
-<li>[ ^脚注编号]：“解释的内容” 即可在文章结尾显示解释内容（如本文末尾所示）</li>
-</ol>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">解释内容
-<br/>
+<h1 id="python与adb指令配合实现自动点按手机屏幕"><a href="#python与adb指令配合实现自动点按手机屏幕" class="headerlink" title="python与adb指令配合实现自动点按手机屏幕"></a>python与adb指令配合实现自动点按手机屏幕</h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import os,time</span><br><span class="line">for i in range(0,20) #循环20次</span><br><span class="line">    os.system(&#39;adb shell input tap 500 1300&#39;) </span><br><span class="line">    #输出指令到控制台,点按位置在(500,1300)处</span><br><span class="line">    time.sleep(1) #输出之间的时间间隔</span><br></pre></td></tr></table></figure>
+<h2 id="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><a href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件" class="headerlink" title="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"></a>由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</h2><br/>
 
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (&quot;&quot;)");
-			</script>
-<br/></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
+        <div id="aplayer-mDaMBRZN" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-mDaMBRZN"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "城南花已开",
+              author: "三亩地",
+              url: "http://m10.music.126.net/20191229195253/8b4d7c8452c22d7741152bd709797a07/ymusic/0bfe/142a/f8dd/dba327776596fa419e3c8fa6d4c4de43.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+<br/>
+完，如果本文对您有帮助的话，您的赞赏是我进步的最大动力。如果有任何问题，欢迎在评论区指出,您也可以通过点击主页左下角里的邮箱地址联系我。
     </div>
 
     <div>  
@@ -352,12 +370,12 @@
     <!-- JS库 sweetalert 可修改路径 -->
     <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <p><span>本文标题:</span><a href="/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/">HEXO中的footnotes插件（快速给Markdown文档添加脚注）</a></p>
+    <p><span>本文标题:</span><a href="/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/">python三行代码实现电脑端控制安卓手机的连点脚本</a></p>
     <p><span>文章作者:</span><a href="/" title="访问 Cyf 的个人博客">Cyf</a></p>
     <p><span>发布时间:</span>2019年12月28日 - 18:36</p>
-    <p><span>最后更新:</span>2019年12月29日 - 15:21</p>
-  <p><span>原始链接:</span><a href="/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/" title="HEXO中的footnotes插件（快速给Markdown文档添加脚注）">http://cyf2020.github.io/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/</a>
-      <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://cyf2020.github.io/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/"  aria-label="复制成功！"></i></span>
+    <p><span>最后更新:</span>2019年12月29日 - 15:20</p>
+  <p><span>原始链接:</span><a href="/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/" title="python三行代码实现电脑端控制安卓手机的连点脚本">http://cyf2020.github.io/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/</a>
+      <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://cyf2020.github.io/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/"  aria-label="复制成功！"></i></span>
     </p>
     <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"><i class="fa fa-creative-commons"></i>BY-NC-SA </a>许可协议。转载请注明出处!</p>  
   </div>
@@ -404,8 +422,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
-              <a href="/tags/footnotes/" rel="tag"># footnotes</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/android/" rel="tag"># android</a>
+              <a href="/tags/adb/" rel="tag"># adb</a>
+              <a href="/tags/%E8%84%9A%E6%9C%AC/" rel="tag"># 脚本</a>
           </div>
 
         
@@ -413,11 +433,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/" rel="prev" title="python三行代码实现电脑端控制安卓手机的连点脚本">
-      <i class="fa fa-chevron-left"></i> python三行代码实现电脑端控制安卓手机的连点脚本
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/" rel="next" title="HEXO中的footnotes插件（快速给Markdown文档添加脚注）">
+      HEXO中的footnotes插件（快速给Markdown文档添加脚注） <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -478,7 +498,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插件概述"><span class="nav-number">2.</span> <span class="nav-text">插件概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装方法"><span class="nav-number">3.</span> <span class="nav-text">安装方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用方法"><span class="nav-number">4.</span> <span class="nav-text">使用方法</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电脑软件准备"><span class="nav-number">2.</span> <span class="nav-text">电脑软件准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手机准备"><span class="nav-number">3.</span> <span class="nav-text">手机准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#python与adb指令配合实现自动点按手机屏幕"><span class="nav-number">4.</span> <span class="nav-text">python与adb指令配合实现自动点按手机屏幕</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><span class="nav-number">4.1.</span> <span class="nav-text">由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
