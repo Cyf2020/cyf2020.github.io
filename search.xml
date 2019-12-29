@@ -4,6 +4,7 @@
     <title>JavaSE学习笔记</title>
     <url>/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习JavaSE过程中的笔记，以及一些常见问题的回答</p>
+<a id="more"></a>
 <h1 id="Java语言准备工作"><a href="#Java语言准备工作" class="headerlink" title="Java语言准备工作"></a>Java语言准备工作</h1><h2 id="JDK-JRE-JVM三者关系"><a href="#JDK-JRE-JVM三者关系" class="headerlink" title="JDK,JRE,JVM三者关系"></a>JDK,JRE,JVM三者关系</h2><ol>
 <li>JDK包含JRE，JRE又包含JVM</li>
 <li>JDK=JRE+Java开发工具（javac.exe,java.exe,javadoc.exe）</li>
