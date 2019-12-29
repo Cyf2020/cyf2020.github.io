@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>相册</title>
-    <url>/2019/12/29/Photos/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-  </entry>
-  <entry>
     <title>HEXO中的footnotes插件（快速给Markdown文档添加脚注）</title>
     <url>/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、插件概述"><a href="#一、插件概述" class="headerlink" title="一、插件概述"></a>一、插件概述</h1><hr>
@@ -35,12 +30,12 @@
 <li>[ ^脚注编号]：“解释的内容” 即可在文章结尾显示解释内容（如本文末尾所示）</li>
 </ol>
 
-        <div id="aplayer-dESmiOEL" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-gTmnnwuC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-dESmiOEL"),
+            element: document.getElementById("aplayer-gTmnnwuC"),
             narrow: false,
             autoplay: true,
             showlrc: false,
