@@ -8,31 +8,9 @@
   <entry>
     <title>HEXO中的footnotes插件</title>
     <url>/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-        <div id="aplayer-ExhUsVUT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-ExhUsVUT"),
-            narrow: false,
-            autoplay: false,
-            showlrc: false,
-            music: {
-              title: "城南花已开",
-              author: "三亩地",
-              url: "http://music.163.com/#/song id=468176711;",
-              pic: "",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-
-<h1 id="一、插件概述"><a href="#一、插件概述" class="headerlink" title="一、插件概述"></a>一、插件概述</h1><hr>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、插件概述"><a href="#一、插件概述" class="headerlink" title="一、插件概述"></a>一、插件概述</h1><hr>
 <ul>
-<li>在HEXO建立的个人博客编写markdown文档时迅速编写脚注</li>
+<li>在HEXO建立的个人博客编写markdown文档时迅速编写脚注<a id="more"></a></li>
 <li>效果如下</li>
 <li><div align=center> <img src="../images/1-1.bmp" width="200" height="100"/><div>
 <div align=center> <img src="../images/1-2.bmp" width="200" height="100"/><div>
@@ -48,6 +26,28 @@
 <li><p>输入命令 <code>$ cnpm install hexo-footnotes --save</code></p>
 </li>
 </ol>
+
+        <div id="aplayer-IZUAlSnc" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-IZUAlSnc"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "城南花已开",
+              author: "三亩地",
+              url: "http://m10.music.126.net/20191229195253/8b4d7c8452c22d7741152bd709797a07/ymusic/0bfe/142a/f8dd/dba327776596fa419e3c8fa6d4c4de43.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
 <p><a href="https://github.com/LouisBarranqueiro/hexo-footnotes" target="_blank" rel="noopener">官方文档</a><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">官方文档</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div></p>
 ]]></content>
       <tags>
