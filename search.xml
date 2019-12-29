@@ -6,16 +6,18 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
   </entry>
   <entry>
-    <title>HEXO中的footnotes插件</title>
+    <title>HEXO中的footnotes插件（快速给Markdown文档添加脚注）</title>
     <url>/2019/12/29/Hello-World-My-first-tempt-to-write-my-own-blog/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、插件概述"><a href="#一、插件概述" class="headerlink" title="一、插件概述"></a>一、插件概述</h1><hr>
 <ul>
 <li>在HEXO建立的个人博客编写markdown文档时迅速编写脚注<a id="more"></a></li>
 <li>效果如下</li>
-<li><div align=center> <img src="../images/1-1.bmp" width="200" height="100"/><div>
-<div align=center> <img src="../images/1-2.bmp" width="200" height="100"/><div>
-# 二、安装方法</li>
+<li><div align=center> <img src="/images/1-1.bmp"/><div>
+<div align=center> <img src="/images/1-2.bmp" /><div>
+
+</li>
 </ul>
+<h1 id="二、安装方法"><a href="#二、安装方法" class="headerlink" title="二、安装方法"></a>二、安装方法</h1><hr>
 <ol>
 <li><p>以及安装HEXO，并建立博客文件夹根目录 </p>
 </li>
@@ -26,13 +28,19 @@
 <li><p>输入命令 <code>$ cnpm install hexo-footnotes --save</code></p>
 </li>
 </ol>
+<h1 id="三、使用方法"><a href="#三、使用方法" class="headerlink" title="三、使用方法"></a>三、使用方法</h1><hr>
+<ol>
+<li>“需要脚注的内容”+[ ^脚注编号] </li>
+<li>就会显示为 “内容”<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></li>
+<li>[ ^脚注编号]：“解释的内容” 即可在文章结尾显示解释内容（如本文末尾所示）</li>
+</ol>
 
-        <div id="aplayer-IZUAlSnc" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-dESmiOEL" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-IZUAlSnc"),
+            element: document.getElementById("aplayer-dESmiOEL"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -48,7 +56,7 @@
           window.aplayers.push(ap);
         </script>
 
-<p><a href="https://github.com/LouisBarranqueiro/hexo-footnotes" target="_blank" rel="noopener">官方文档</a><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">官方文档</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div></p>
+<p>—<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">解释内容</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div></p>
 ]]></content>
       <tags>
         <tag>HEXO 插件</tag>
