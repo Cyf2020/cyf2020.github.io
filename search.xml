@@ -67,10 +67,120 @@
 <td align="center">\</td>
 </tr>
 </tbody></table>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">float</span> a = <span class="number">12f</span>; <span class="comment">//浮点型默认double型,后加f转换</span></span><br><span class="line"><span class="keyword">int</span> b = <span class="number">0xf</span>; <span class="comment">//16进制声明</span></span><br><span class="line"><span class="keyword">int</span> c = <span class="number">012</span>; <span class="comment">//八进制声明</span></span><br><span class="line"><span class="keyword">double</span> d =<span class="number">5.12e-2</span>;<span class="comment">//科学计数法声明</span></span><br><span class="line"><span class="keyword">char</span> e = <span class="string">'\u000a'</span>; <span class="comment">//unicode值表示字符常量</span></span><br><span class="line"><span class="keyword">long</span> f = <span class="number">12323L</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">float</span> a = <span class="number">12f</span>; <span class="comment">//浮点型默认double型,后加f转换</span></span><br><span class="line"><span class="keyword">int</span> b = <span class="number">0xf</span>; <span class="comment">//16进制声明</span></span><br><span class="line"><span class="keyword">int</span> c = <span class="number">012</span>; <span class="comment">//八进制声明</span></span><br><span class="line"><span class="keyword">double</span> d =<span class="number">5.12e-2</span>;<span class="comment">//科学计数法声明</span></span><br><span class="line"><span class="keyword">char</span> e = <span class="string">'\u000a'</span>; <span class="comment">//unicode值表示字符常量</span></span><br><span class="line"><span class="keyword">long</span> f = <span class="number">12323L</span>;</span><br><span class="line"><span class="keyword">int</span> g= <span class="number">0b1010</span><span class="comment">//二进制声明</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//截断</span></span><br><span class="line"><span class="keyword">double</span> a=<span class="number">1.2</span>;</span><br><span class="line"><span class="keyword">int</span> b=(<span class="keyword">int</span>)a;</span><br><span class="line"><span class="comment">//精度损失</span></span><br><span class="line"><span class="keyword">int</span> c=<span class="number">128</span>;</span><br><span class="line"><span class="keyword">byte</span> d=(<span class="keyword">byte</span>)c;<span class="comment">//d=-128</span></span><br></pre></td></tr></table></figure>
-<h2 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String numberStr=<span class="string">"001"</span>;</span><br><span class="line">String name=<span class="string">"Cyf"</span>;</span><br><span class="line">System.out.println(numberStr+name);<span class="comment">//连接操作</span></span><br></pre></td></tr></table></figure>
+<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//截断</span></span><br><span class="line"><span class="keyword">double</span> a=<span class="number">1.2</span>;</span><br><span class="line"><span class="keyword">int</span> b=(<span class="keyword">int</span>)a;</span><br><span class="line"><span class="comment">//精度损失</span></span><br><span class="line"><span class="keyword">int</span> c=<span class="number">128</span>;</span><br><span class="line"><span class="keyword">byte</span> d=(<span class="keyword">byte</span>)c;<span class="comment">//d=-128</span></span><br></pre></td></tr></table></figure>
+<h3 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> numberStr= <span class="number">001</span>;</span><br><span class="line">String name=<span class="string">"Cyf"</span>;</span><br><span class="line">System.out.println(numberStr+name);<span class="comment">//连接操作 </span></span><br><span class="line"><span class="comment">//char型相加做的是ASCII运算</span></span><br><span class="line">System.out.println(<span class="string">"*  *"</span>);</span><br><span class="line">System.out.println(<span class="string">'*'</span>+<span class="string">'\t'</span>+<span class="string">'*'</span>);<span class="comment">//输出的是数字</span></span><br><span class="line">System.out.println(<span class="string">'*'</span>+<span class="string">"\t"</span>+<span class="string">'*'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="二进制与十进制的转换"><a href="#二进制与十进制的转换" class="headerlink" title="二进制与十进制的转换"></a>二进制与十进制的转换</h2><ul>
+<li>二进制-&gt;十进制</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">二进制</th>
+<th align="center">二进制运算</th>
+<th align="center">运算所得加数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">2^0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">2^1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">2^2</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">2^3</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">0b1101</td>
+<td align="center">/</td>
+</tr>
+</tbody></table>
+<ul>
+<li>十进制-&gt;二进制</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">十进制</th>
+<th align="center">除数</th>
+<th align="center">商</th>
+<th align="center">余数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">13</td>
+<td align="center">2</td>
+<td align="center">6</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">/</td>
+<td align="center">/</td>
+<td align="center">0b1101</td>
+</tr>
+</tbody></table>
+<h2 id="原码、反码"><a href="#原码、反码" class="headerlink" title="原码、反码"></a>原码、反码</h2><p>十进制数值|1bit符号位|/|码|<br>|:—:|:—:|:—:|:—:|<br>|14|0|0001110|14的原码|<br>|-14|1|0001110|-14的原码|<br>||1|1110001|-14的反码|<br>|真正的-14|1|1110010|-14的补码|</p>
+<ul>
+<li>对于正数，三码合一</li>
+<li>对于负数，将原码除符号位外取反得到反码，将反码加1得到补码</li>
+<li>计算机底层都使用补码来存储数据</li>
+<li>已给出一个数为0b10111011,对应的十进制为多少？<ul>
+<li>首先计算反码为0b10111010</li>
+<li>原码为0b11000101</li>
+<li>十进制为-69</li>
+</ul>
+</li>
+<li>解释了为什么一个int类型的128在强制转换到byte类型时，得到的是-128</li>
+</ul>
+<h2 id="阶段总结1"><a href="#阶段总结1" class="headerlink" title="阶段总结1"></a>阶段总结1</h2><h3 id="Java变量按数据类型的划分以及各自所占空间大小"><a href="#Java变量按数据类型的划分以及各自所占空间大小" class="headerlink" title="Java变量按数据类型的划分以及各自所占空间大小?"></a>Java变量按数据类型的划分以及各自所占空间大小?</h3><ul>
+<li>byte,short,int,long:1,2,4,8</li>
+<li>char:2</li>
+<li>float,double:4,8</li>
+</ul>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="注意的点"><a href="#注意的点" class="headerlink" title="注意的点"></a>注意的点</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//情形1</span></span><br><span class="line"><span class="keyword">short</span> num=<span class="number">1</span>;</span><br><span class="line">num=num+<span class="number">1</span>;<span class="comment">//编译不通过,1是int型,后面的num会强制转化为int</span></span><br><span class="line"><span class="comment">//以下三种方法都可以实现</span></span><br><span class="line">num+=<span class="number">1</span>;</span><br><span class="line">num++;</span><br><span class="line">num=(<span class="keyword">short</span>)(num+<span class="number">1</span>);</span><br><span class="line"><span class="comment">//情形2</span></span><br><span class="line"><span class="keyword">int</span> i=<span class="number">1</span>;</span><br><span class="line">i*=<span class="number">0.1</span>;<span class="comment">//i不改变int型，故i=0</span></span><br><span class="line"><span class="comment">//情形3</span></span><br><span class="line"><span class="keyword">int</span> n=<span class="number">10</span>;</span><br><span class="line">n+=(n++)+(++n);<span class="comment">//n=n+(n++)+(++n)=10+10+12</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><ul>
+<li>&amp;和&amp;&amp;（逻辑与和短路与）</li>
+<li>|和||（逻辑或和短路或）<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//逻辑与</span></span><br><span class="line"><span class="keyword">boolean</span> a=<span class="keyword">false</span>;</span><br><span class="line"><span class="keyword">int</span> num=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a&amp;(num++&gt;<span class="number">0</span>))&#123;</span><br><span class="line"><span class="comment">/*这里的逻辑与在已经判断左边是false的情况下，依旧对右边进行判断，所以num最终等于11*/</span></span><br><span class="line">    do_sth();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//短路与</span></span><br><span class="line">num=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a&amp;&amp;(num++&gt;<span class="number">0</span>))&#123;</span><br><span class="line"><span class="comment">/*这里的短路与在判断了左边是false的情况下，不对右边进行判断，所以num最终等于10*/</span></span><br><span class="line">    do_sth();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*逻辑或和短路或同理，短路或在左边为true的情况下，不对右边进行判断*/</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">0b00000001</span>;<span class="comment">//值为1</span></span><br><span class="line">a=a&lt;&lt;<span class="number">2</span>;<span class="comment">//a左移两位变为0b00000100,值为4</span></span><br><span class="line"><span class="comment">//当位运算移动到符号位时，如a&lt;&lt;31,就会变成负数</span></span><br><span class="line"><span class="comment">//&gt;&gt;&gt;运算符与&gt;&gt;的区别</span></span><br><span class="line"><span class="keyword">byte</span> b=<span class="number">0b10000001</span><span class="comment">//-127</span></span><br><span class="line">b=b&gt;&gt;<span class="number">1</span>;<span class="comment">//空缺用现有符号位代替，b=0b11000000,-64</span></span><br><span class="line">b=b&gt;&gt;&gt;<span class="number">1</span>;<span class="comment">//空缺用0代替，b=0b01000000,64</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>面试题：如何高效计算2*8？答：2&lt;&lt;3 或 8&lt;&lt;1</li>
+</ul>
 ]]></content>
       <categories>
         <category>JavaSE</category>
@@ -79,6 +189,69 @@
         <tag>Java</tag>
         <tag>编程语言</tag>
         <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python三行代码实现电脑端控制安卓手机的连点脚本</title>
+    <url>/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
+<ul>
+<li>前段时间，朋友有抢淘宝直播红包的需求，具体抢红包的细节是，连续点按手机界面上出现的按钮。于是我萌生了使用python脚本控制安卓手机，连续点击屏幕的想法<a id="more"></a>
+<h1 id="电脑软件准备"><a href="#电脑软件准备" class="headerlink" title="电脑软件准备"></a>电脑软件准备</h1></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">Anaconda包管理器</a>,点击进入下载页面（最底部为最新版本）,按需求下载32位或64位</li>
+<li><a href="https://pan.baidu.com/s/1C_20EIVrFVRLSbKIppPNvQ" target="_blank" rel="noopener">adb安卓调试桥</a>,百度网盘链接,点击下载</li>
+<li>vscode(非必须)</li>
+<li>以上软件均需添加到系统环境变量中，这一步请自行百度搜索配置</li>
+<li>在cmd窗口输入<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb -version</span><br><span class="line">python3 -v</span><br></pre></td></tr></table></figure>
+即可确认环境是否准备完善</li>
+</ul>
+<h1 id="手机准备"><a href="#手机准备" class="headerlink" title="手机准备"></a>手机准备</h1><hr>
+<ol>
+<li>打开开发者模式，具体手机型号均有不同，例如OPPO手机流程如下<ul>
+<li>设置-&gt;关于手机-&gt;连续点按版本号5次</li>
+</ul>
+</li>
+<li>打开开发者模式的情况下，打开usb调试开关</li>
+<li>连接手机   </li>
+</ol>
+<h1 id="python与adb指令配合实现自动点按手机屏幕"><a href="#python与adb指令配合实现自动点按手机屏幕" class="headerlink" title="python与adb指令配合实现自动点按手机屏幕"></a>python与adb指令配合实现自动点按手机屏幕</h1><hr>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os,time</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">20</span>) <span class="comment">#循环20次</span></span><br><span class="line">    os.system(<span class="string">'adb shell input tap 500 1300'</span>) </span><br><span class="line">    <span class="comment">#输出指令到控制台,点按位置在(500,1300)处</span></span><br><span class="line">    time.sleep(<span class="number">1</span>) <span class="comment">#输出之间的时间间隔</span></span><br></pre></td></tr></table></figure>
+<h2 id="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><a href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件" class="headerlink" title="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"></a>由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</h2><br/>
+
+        <div id="aplayer-RwhygVKW" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-RwhygVKW"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "城南花已开",
+              author: "三亩地",
+              url: "http://m10.music.126.net/20191229195253/8b4d7c8452c22d7741152bd709797a07/ymusic/0bfe/142a/f8dd/dba327776596fa419e3c8fa6d4c4de43.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+<br/>
+完，如果本文对您有帮助的话，您的赞赏是我进步的最大动力。如果有任何问题，欢迎在评论区指出,您也可以通过点击主页左下角里的邮箱地址联系我。]]></content>
+      <categories>
+        <category>python语言</category>
+        <category>安卓开发</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>android</tag>
+        <tag>adb</tag>
+        <tag>脚本</tag>
       </tags>
   </entry>
   <entry>
@@ -128,69 +301,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>footnotes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python三行代码实现电脑端控制安卓手机的连点脚本</title>
-    <url>/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
-<ul>
-<li>前段时间，朋友有抢淘宝直播红包的需求，具体抢红包的细节是，连续点按手机界面上出现的按钮。于是我萌生了使用python脚本控制安卓手机，连续点击屏幕的想法<a id="more"></a>
-<h1 id="电脑软件准备"><a href="#电脑软件准备" class="headerlink" title="电脑软件准备"></a>电脑软件准备</h1></li>
-</ul>
-<hr>
-<ul>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">Anaconda包管理器</a>,点击进入下载页面（最底部为最新版本）,按需求下载32位或64位</li>
-<li><a href="https://pan.baidu.com/s/1C_20EIVrFVRLSbKIppPNvQ" target="_blank" rel="noopener">adb安卓调试桥</a>,百度网盘链接,点击下载</li>
-<li>vscode(非必须)</li>
-<li>以上软件均需添加到系统环境变量中，这一步请自行百度搜索配置</li>
-<li>在cmd窗口输入<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb -version</span><br><span class="line">python3 -v</span><br></pre></td></tr></table></figure>
-即可确认环境是否准备完善</li>
-</ul>
-<h1 id="手机准备"><a href="#手机准备" class="headerlink" title="手机准备"></a>手机准备</h1><hr>
-<ol>
-<li>打开开发者模式，具体手机型号均有不同，例如OPPO手机流程如下<ul>
-<li>设置-&gt;关于手机-&gt;连续点按版本号5次</li>
-</ul>
-</li>
-<li>打开开发者模式的情况下，打开usb调试开关</li>
-<li>连接手机   </li>
-</ol>
-<h1 id="python与adb指令配合实现自动点按手机屏幕"><a href="#python与adb指令配合实现自动点按手机屏幕" class="headerlink" title="python与adb指令配合实现自动点按手机屏幕"></a>python与adb指令配合实现自动点按手机屏幕</h1><hr>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os,time</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">20</span>) <span class="comment">#循环20次</span></span><br><span class="line">    os.system(<span class="string">'adb shell input tap 500 1300'</span>) </span><br><span class="line">    <span class="comment">#输出指令到控制台,点按位置在(500,1300)处</span></span><br><span class="line">    time.sleep(<span class="number">1</span>) <span class="comment">#输出之间的时间间隔</span></span><br></pre></td></tr></table></figure>
-<h2 id="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><a href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件" class="headerlink" title="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"></a>由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</h2><br/>
-
-        <div id="aplayer-vZSQbWOS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-vZSQbWOS"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              title: "城南花已开",
-              author: "三亩地",
-              url: "http://m10.music.126.net/20191229195253/8b4d7c8452c22d7741152bd709797a07/ymusic/0bfe/142a/f8dd/dba327776596fa419e3c8fa6d4c4de43.mp3",
-              pic: "",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-<br/>
-完，如果本文对您有帮助的话，您的赞赏是我进步的最大动力。如果有任何问题，欢迎在评论区指出,您也可以通过点击主页左下角里的邮箱地址联系我。]]></content>
-      <categories>
-        <category>python语言</category>
-        <category>安卓开发</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>android</tag>
-        <tag>adb</tag>
-        <tag>脚本</tag>
       </tags>
   </entry>
 </search>
