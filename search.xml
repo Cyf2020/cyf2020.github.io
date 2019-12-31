@@ -3,7 +3,7 @@
   <entry>
     <title>JavaSE学习笔记</title>
     <url>/2019/12/30/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习JavaSE过程中的笔记，以及一些常见问题的回答</p>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习JavaSE过程中的笔记，以及一些常见问题的回答</p>
 <a id="more"></a>
 <h1 id="Java语言准备工作"><a href="#Java语言准备工作" class="headerlink" title="Java语言准备工作"></a>Java语言准备工作</h1><h2 id="JDK-JRE-JVM三者关系"><a href="#JDK-JRE-JVM三者关系" class="headerlink" title="JDK,JRE,JVM三者关系"></a>JDK,JRE,JVM三者关系</h2><ol>
 <li>JDK包含JRE，JRE又包含JVM</li>
@@ -257,7 +257,7 @@
   <entry>
     <title>HEXO中的footnotes插件（快速给Markdown文档添加脚注）</title>
     <url>/2019/12/29/HEXO%E4%B8%AD%E7%9A%84footnotes%E6%8F%92%E4%BB%B6%EF%BC%88%E5%BF%AB%E9%80%9F%E7%BB%99Markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%B3%A8%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
 <p>今天介绍一款hexo里的插件，能够自动在生成的网页最底部添加脚注的解释信息，安装与使用方法如下</p>
 <a id="more"></a>
 <h1 id="插件概述"><a href="#插件概述" class="headerlink" title="插件概述"></a>插件概述</h1><hr>
@@ -300,7 +300,7 @@
   <entry>
     <title>python三行代码实现电脑端控制安卓手机的连点脚本</title>
     <url>/2019/12/29/%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%9A%84%E8%BF%9E%E7%82%B9%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
 <ul>
 <li>前段时间，朋友有抢淘宝直播红包的需求，具体抢红包的细节是，连续点按手机界面上出现的按钮。于是我萌生了使用python脚本控制安卓手机，连续点击屏幕的想法<a id="more"></a>
 <h1 id="电脑软件准备"><a href="#电脑软件准备" class="headerlink" title="电脑软件准备"></a>电脑软件准备</h1></li>
