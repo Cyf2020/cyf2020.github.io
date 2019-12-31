@@ -285,16 +285,10 @@
 <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><hr>
 <ol>
 <li>“需要脚注的内容”+[ ^脚注编号] </li>
-<li>就会显示为 “内容”<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></li>
+<li>就会显示为 “内容”<a href="解释内容">^1</a></li>
 <li>[ ^脚注编号]：“解释的内容” 即可在文章结尾显示解释内容（如本文末尾所示）</li>
 </ol>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">解释内容
-<br/>
-
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (&quot;&quot;)");
-			</script>
-<br/></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+]]></content>
       <categories>
         <category>前端HEXO</category>
       </categories>
@@ -331,30 +325,8 @@
 </ol>
 <h1 id="python与adb指令配合实现自动点按手机屏幕"><a href="#python与adb指令配合实现自动点按手机屏幕" class="headerlink" title="python与adb指令配合实现自动点按手机屏幕"></a>python与adb指令配合实现自动点按手机屏幕</h1><hr>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os,time</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">20</span>) <span class="comment">#循环20次</span></span><br><span class="line">    os.system(<span class="string">'adb shell input tap 500 1300'</span>) </span><br><span class="line">    <span class="comment">#输出指令到控制台,点按位置在(500,1300)处</span></span><br><span class="line">    time.sleep(<span class="number">1</span>) <span class="comment">#输出之间的时间间隔</span></span><br></pre></td></tr></table></figure>
-<h2 id="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><a href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件" class="headerlink" title="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"></a>由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</h2><br/>
-
-        <div id="aplayer-nrSxAHdF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-nrSxAHdF"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              title: "城南花已开",
-              author: "三亩地",
-              url: "http://m10.music.126.net/20191229195253/8b4d7c8452c22d7741152bd709797a07/ymusic/0bfe/142a/f8dd/dba327776596fa419e3c8fa6d4c4de43.mp3",
-              pic: "",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-<br/>
-完，如果本文对您有帮助的话，您的赞赏是我进步的最大动力。如果有任何问题，欢迎在评论区指出,您也可以通过点击主页左下角里的邮箱地址联系我。]]></content>
+<h2 id="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><a href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件" class="headerlink" title="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"></a>由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</h2><p>完，如果本文对您有帮助的话，您的赞赏是我进步的最大动力。如果有任何问题，欢迎在评论区指出,您也可以通过点击主页左下角里的邮箱地址联系我。</p>
+]]></content>
       <categories>
         <category>python语言</category>
         <category>安卓开发</category>
