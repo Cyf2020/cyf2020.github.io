@@ -17,7 +17,7 @@
 <h2 id="常用的cmd命令行操作"><a href="#常用的cmd命令行操作" class="headerlink" title="常用的cmd命令行操作"></a>常用的cmd命令行操作</h2><ul>
 <li>cd 进入路径 md 创建目录 rd 删除目录 del 删除文件</li>
 </ul>
-<h1 id="Java基础语法"><a href="#Java基础语法" class="headerlink" title="Java基础语法"></a>Java基础语法</h1><h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
+<h1 id="Java基础语法-定义赋值运算"><a href="#Java基础语法-定义赋值运算" class="headerlink" title="Java基础语法(定义赋值运算)"></a>Java基础语法(定义赋值运算)</h1><h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
 <li>包名 所有字母小写 com.package</li>
 <li>类名、接口名 所有单词首字母大写</li>
 <li>变量名、方法名 第一个单词小写，其余单词首字母大写</li>
@@ -197,24 +197,48 @@
 </li>
 <li>解释了为什么一个int类型的128在强制转换到byte类型时，得到的是-128</li>
 </ul>
-<h2 id="阶段总结1"><a href="#阶段总结1" class="headerlink" title="阶段总结1"></a>阶段总结1</h2><h3 id="Java变量按数据类型的划分以及各自所占空间大小"><a href="#Java变量按数据类型的划分以及各自所占空间大小" class="headerlink" title="Java变量按数据类型的划分以及各自所占空间大小?"></a>Java变量按数据类型的划分以及各自所占空间大小?</h3><ul>
+<h2 id="阶段总结1"><a href="#阶段总结1" class="headerlink" title="阶段总结1"></a>阶段总结1</h2><ol>
+<li>Java变量按数据类型的划分以及各自所占空间大小?<ul>
 <li>byte,short,int,long:1,2,4,8</li>
 <li>char:2</li>
 <li>float,double:4,8</li>
 </ul>
+</li>
+</ol>
 <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="注意的点"><a href="#注意的点" class="headerlink" title="注意的点"></a>注意的点</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//情形1</span></span><br><span class="line"><span class="keyword">short</span> num=<span class="number">1</span>;</span><br><span class="line">num=num+<span class="number">1</span>;<span class="comment">//编译不通过,1是int型,后面的num会强制转化为int</span></span><br><span class="line"><span class="comment">//以下三种方法都可以实现</span></span><br><span class="line">num+=<span class="number">1</span>;</span><br><span class="line">num++;</span><br><span class="line">num=(<span class="keyword">short</span>)(num+<span class="number">1</span>);</span><br><span class="line"><span class="comment">//情形2</span></span><br><span class="line"><span class="keyword">int</span> i=<span class="number">1</span>;</span><br><span class="line">i*=<span class="number">0.1</span>;<span class="comment">//i不改变int型，故i=0</span></span><br><span class="line"><span class="comment">//情形3</span></span><br><span class="line"><span class="keyword">int</span> n=<span class="number">10</span>;</span><br><span class="line">n+=(n++)+(++n);<span class="comment">//n=n+(n++)+(++n)=10+10+12</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><ul>
 <li>&amp;和&amp;&amp;（逻辑与和短路与）</li>
-<li>|和||（逻辑或和短路或）<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//逻辑与</span></span><br><span class="line"><span class="keyword">boolean</span> a=<span class="keyword">false</span>;</span><br><span class="line"><span class="keyword">int</span> num=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a&amp;(num++&gt;<span class="number">0</span>))&#123;</span><br><span class="line"><span class="comment">/*这里的逻辑与在已经判断左边是false的情况下，依旧对右边进行判断，所以num最终等于11*/</span></span><br><span class="line">    do_sth();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//短路与</span></span><br><span class="line">num=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a&amp;&amp;(num++&gt;<span class="number">0</span>))&#123;</span><br><span class="line"><span class="comment">/*这里的短路与在判断了左边是false的情况下，不对右边进行判断，所以num最终等于10*/</span></span><br><span class="line">    do_sth();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*逻辑或和短路或同理，短路或在左边为true的情况下，不对右边进行判断*/</span></span><br></pre></td></tr></table></figure>
-
-</li>
+<li>|和||（逻辑或和短路或）</li>
 </ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//逻辑与</span></span><br><span class="line"><span class="keyword">boolean</span> a=<span class="keyword">false</span>;</span><br><span class="line"><span class="keyword">int</span> num=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a&amp;(num++&gt;<span class="number">0</span>))&#123;</span><br><span class="line"><span class="comment">/*这里的逻辑与在已经判断左边是false的情况下，依旧对右边进行判断，所以num最终等于11*/</span></span><br><span class="line">    do_sth();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//短路与</span></span><br><span class="line">num=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a&amp;&amp;(num++&gt;<span class="number">0</span>))&#123;</span><br><span class="line"><span class="comment">/*这里的短路与在判断了左边是false的情况下，不对右边进行判断，所以num最终等于10*/</span></span><br><span class="line">    do_sth();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*逻辑或和短路或同理，短路或在左边为true的情况下，不对右边进行判断*/</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">0b00000001</span>;<span class="comment">//值为1</span></span><br><span class="line">a=a&lt;&lt;<span class="number">2</span>;<span class="comment">//a左移两位变为0b00000100,值为4</span></span><br><span class="line"><span class="comment">//当位运算移动到符号位时，如a&lt;&lt;31,就会变成负数</span></span><br><span class="line"><span class="comment">//&gt;&gt;&gt;运算符与&gt;&gt;的区别</span></span><br><span class="line"><span class="keyword">byte</span> b=<span class="number">0b10000001</span><span class="comment">//-127</span></span><br><span class="line">b=b&gt;&gt;<span class="number">1</span>;<span class="comment">//空缺用现有符号位代替，b=0b11000000,-64</span></span><br><span class="line">b=b&gt;&gt;&gt;<span class="number">1</span>;<span class="comment">//空缺用0代替，b=0b01000000,64</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>面试题：如何高效计算2*8？答：2&lt;&lt;3 或 8&lt;&lt;1</li>
 </ul>
-]]></content>
+<h2 id="阶段总结2"><a href="#阶段总结2" class="headerlink" title="阶段总结2"></a>阶段总结2</h2><ol>
+<li>&amp;和&amp;&amp;的异同？<ul>
+<li>&amp;完全做完左右布尔表达式语句中的内容</li>
+<li>&amp;&amp;一旦确认左边为false，立即结束执行右边的布尔表达式</li>
+<li>开发中一般使用&amp;&amp;，但合理使用&amp;能够合理规避一些异常</li>
+</ul>
+</li>
+<li>下列代码执行结果是？</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Operate</span></span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">     <span class="keyword">boolean</span> x = <span class="keyword">false</span>; </span><br><span class="line">     <span class="keyword">short</span> z =<span class="number">40</span>;</span><br><span class="line">     <span class="keyword">if</span>((z++ == <span class="number">40</span>)&amp;&amp;(y=<span class="keyword">true</span>))<span class="comment">//小心，这里是赋值给y</span></span><br><span class="line">         z++;</span><br><span class="line">     <span class="keyword">if</span>(++z==<span class="number">43</span>||z++ == <span class="number">43</span>)<span class="comment">//注意这里是短路与</span></span><br><span class="line">         z++;</span><br><span class="line">     System.out.println(z);<span class="comment">//结果为44</span></span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>定义三个int类型整数，一句代码返回最大值</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Max</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(maxNum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">maxNum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> c)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (a&gt;b?a:b)&gt;c?(a&gt;b?a:b):c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Java基础语法-循环判断"><a href="#Java基础语法-循环判断" class="headerlink" title="Java基础语法(循环判断)"></a>Java基础语法(循环判断)</h1><h2 id="Scanner类概述（不建议在算法竞赛中使用）"><a href="#Scanner类概述（不建议在算法竞赛中使用）" class="headerlink" title="Scanner类概述（不建议在算法竞赛中使用）"></a>Scanner类概述（不建议在算法竞赛中使用）</h2><ol>
+<li>导包 <code>import java.util.Scanner;</code> 写在class声明上面</li>
+<li>创建对象 <code>Scanner input = new Scanner(System.in);</code></li>
+<li><code>int num = input.nextInt()</code></li>
+</ol>
+<h2 id="随机数调用"><a href="#随机数调用" class="headerlink" title="随机数调用"></a>随机数调用</h2><p><code>Math.random()</code>返回一个double num∈[0.0,1.0)<br><br><code>(int)(Math.random()*(b-a+1)+a)</code>即可返回一个int num∈[a,b]</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
       <categories>
         <category>JavaSE</category>
       </categories>
@@ -303,12 +327,12 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os,time</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">20</span>) <span class="comment">#循环20次</span></span><br><span class="line">    os.system(<span class="string">'adb shell input tap 500 1300'</span>) </span><br><span class="line">    <span class="comment">#输出指令到控制台,点按位置在(500,1300)处</span></span><br><span class="line">    time.sleep(<span class="number">1</span>) <span class="comment">#输出之间的时间间隔</span></span><br></pre></td></tr></table></figure>
 <h2 id="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"><a href="#由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件" class="headerlink" title="由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件"></a>由此便简单实现了自动点击屏幕的脚本，在此基础上还可以进一步实现识别特定目标并点击，这样便可以开发出自动抢红包等脚本软件</h2><br/>
 
-        <div id="aplayer-DgQAkzzU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-AAoSmpyQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-DgQAkzzU"),
+            element: document.getElementById("aplayer-AAoSmpyQ"),
             narrow: false,
             autoplay: true,
             showlrc: false,
